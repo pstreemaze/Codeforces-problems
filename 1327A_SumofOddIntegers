@@ -1,0 +1,26 @@
+package _1327A_SumofOddIntegers;
+
+import java.util.Scanner;
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Scanner sc=new Scanner(System.in);
+       long t=sc.nextInt();
+       while(t!=0)
+       {
+    	  long n=sc.nextInt();
+    	  long k=sc.nextInt();
+    	  if(n>=k*k && (n & 1)==(k & 1))
+    	  {
+    		  System.out.println("YES");
+    	  }
+    	  else
+    	  {
+    		  System.out.println("NO");
+    	  }
+    	   t--;
+       }
+	}
+
+}
